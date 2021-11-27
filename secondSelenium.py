@@ -1,27 +1,16 @@
 from selenium import webdriver
-import time 
+import time
+import os 
 
-link = "http://suninjuly.github.io/simple_form_find_task.html"
+browser = webdriver.Chrome()
+link = "https://suninjuly.github.io/execute_script.html"
+browser.get(link)
 
-try:
-    browser = webdriver.Chrome()
-    browser.get(link)
+button = browser.find_element_by_tag_name("button")
 
-    input1 = browser.find_element_by_tag_name(value1)
-    input1.send_keys("Ivan")
-    input2 = browser.find_element_by_name(value2)
-    input2.send_keys("Petrov")
-    input3 = browser.find_element_by_class_name(value3)
-    input3.send_keys("Smolensk")
-    input4 = browser.find_element_by_id(value4)
-    input4.send_keys("Russia")
-    button = browser.find_element_by_css_selector("button.btn")
-    button.click()
+browser.execute_script('button = document.getElementsByTagName("button")[0];button.scrollIntoView(true);button.click()')
+#browser.execute_script("window.scrollBy(0, 1000);")
+#button.click()
 
-finally:
-    # успеваем скопировать код за 30 секунд
-    time.sleep(30)
-    # закрываем браузер после всех манипуляций
-    browser.quit()
-
-# не забываем оставить пустую строку в конце файла
+time.sleep(10)
+browser.quit()
