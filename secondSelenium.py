@@ -1,16 +1,17 @@
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 from selenium import webdriver
-import time
-import os 
 
 browser = webdriver.Chrome()
-link = "https://suninjuly.github.io/execute_script.html"
-browser.get(link)
 
-button = browser.find_element_by_tag_name("button")
+browser.get("http://suninjuly.github.io/wait2.html")
 
-browser.execute_script('button = document.getElementsByTagName("button")[0];button.scrollIntoView(true);button.click()')
-#browser.execute_script("window.scrollBy(0, 1000);")
-#button.click()
+# говорим Selenium проверять в течение 5 секунд, пока кнопка не станет кликабельной
+button = WebDriverWait(browser, 5).until(
+        EC.element_to_be_clickable((By.ID, "verify"))
+    )
+button.click()
+message = browser.find_element_by_id("verify_message")
 
-time.sleep(10)
-browser.quit()
+assert "successful" in message.text
