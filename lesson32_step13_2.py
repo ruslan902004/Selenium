@@ -2,7 +2,7 @@ import unittest
 from selenium import webdriver
 import time 
 
-def test_site(link):
+def site(link):
     #link = " http://suninjuly.github.io/registration1.html"
 
     try:
@@ -22,8 +22,8 @@ def test_site(link):
         button = browser.find_element_by_xpath('//body/div/form/button')
         button.click()
         return True
-    #except:
-        #return False
+    except:
+        return False
     finally:
         # успеваем скопировать код за 30 секунд
         time.sleep(10)
@@ -35,11 +35,11 @@ def test_site(link):
 class TestSiteReg(unittest.TestCase):
     def test_reg1(self):
         link = " http://suninjuly.github.io/registration1.html"
-        self.assertEqual(test_site(link), True, "Registration success")
+        self.assertEqual(site(link), True, "Registration success")
         
     def test_reg2(self):
         link = " http://suninjuly.github.io/registration2.html"
-        self.assertEqual(test_site(link), True, "Registration success")
+        self.assertEqual(site(link), True, "Registration success")
         
 if __name__ == "__main__":
     unittest.main()
