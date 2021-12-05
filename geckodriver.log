@@ -1,0 +1,53 @@
+1638630126638	mozrunner::runner	INFO	Running command: "/snap/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Qx4y2mR9rtXD"
+1638630324760	geckodriver	INFO	Listening on 127.0.0.1:59535
+1638630325764	mozrunner::runner	INFO	Running command: "/snap/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileXsbjGV"
+1638630337418	geckodriver	INFO	Listening on 127.0.0.1:49955
+1638630337423	mozrunner::runner	INFO	Running command: "/snap/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileDLoY2i"
+1638630828271	geckodriver	INFO	Listening on 127.0.0.1:51811
+1638630828276	mozrunner::runner	INFO	Running command: "/snap/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilefEbO70"
+1638630843872	geckodriver	INFO	Listening on 127.0.0.1:59485
+1638630844876	mozrunner::runner	INFO	Running command: "/snap/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileEDGmGO"
+1638631355952	geckodriver	INFO	Listening on 127.0.0.1:56371
+1638631356944	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilezqw6qM"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1638631357878	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilezqw6qM/search.json.mozlz4", (void 0)))
+1638631360752	Marionette	INFO	Listening on port 42937
+1638631360798	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://stepik.azureedge.net/static/frontend-build/vendor.js?v=1638380070, line 6074: unreachable code after return statement
+ATTENTION: default value of option mesa_glthread overridden by environment.
+[GFX1-]: Couldn't sanitize RENDERER device: SVGA3D; build: RELEASE;  LLVM;
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 10: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[GFX1-]: Couldn't sanitize RENDERER device: SVGA3D; build: RELEASE;  LLVM;
+1638631369234	Marionette	INFO	Stopped listening on port 42937
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1638706482732	geckodriver	INFO	Listening on 127.0.0.1:35727
+1638706482738	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileSV1gnN"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1638706483457	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileSV1gnN/search.json.mozlz4", (void 0)))
+1638706485070	Marionette	INFO	Listening on port 38665
+1638706485671	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://selenium1py.pythonanywhere.com/ru/, line 374: ReferenceError: oscar is not defined
+1638706487238	Marionette	INFO	Stopped listening on port 38665
+1638706684338	geckodriver	INFO	Listening on 127.0.0.1:48595
+1638706684343	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileCAak5C"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1638706685035	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileCAak5C/search.json.mozlz4", (void 0)))
+1638706686693	Marionette	INFO	Listening on port 41493
+1638706686806	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://selenium1py.pythonanywhere.com/ru/, line 374: ReferenceError: oscar is not defined
+1638706688281	Marionette	INFO	Stopped listening on port 41493
+1638706688902	geckodriver	INFO	Listening on 127.0.0.1:55797
+1638706688912	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileB3uRNL"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1638706689522	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileB3uRNL/search.json.mozlz4", (void 0)))
+1638706691135	Marionette	INFO	Listening on port 34935
+1638706691274	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://selenium1py.pythonanywhere.com/ru/, line 374: ReferenceError: oscar is not defined
+1638706692733	Marionette	INFO	Stopped listening on port 34935
